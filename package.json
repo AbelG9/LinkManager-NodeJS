@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "engines": {
     "node": "12.16.1",
     "npm": "6.13.4"
   },
-
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
@@ -32,7 +30,7 @@
     "mysql": "^2.18.1",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "react-scripts": "^3.4.1",
     "timeago.js": "^4.0.2"
   }
-  
 }
