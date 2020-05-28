@@ -10,8 +10,11 @@
   },
 
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "react-scripts start",
     "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
@@ -30,8 +33,6 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "timeago.js": "^4.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
   }
+  
 }
