@@ -8,18 +8,17 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.5.0",
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
@@ -31,6 +30,19 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react-scripts": "^3.4.1",
+    "serve": "^11.3.1",
     "timeago.js": "^4.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

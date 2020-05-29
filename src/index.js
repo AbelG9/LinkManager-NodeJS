@@ -9,14 +9,14 @@ const app = express();
 //configuraciones
 app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.exp_hbs',exp_handlebars({
+app.engine('.hbs',exp_handlebars({
     defaultLayout: 'main',
-    layoutsDir: path.join(app.get('views'), 'layout'),
+    layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.exp_hbs',
+    extname: '.hbs',
     helpers: require('./lib/handlebars'),
 }) );
-app.set('view engine', 'exp_hbs');
+app.set('view engine', 'hbs');
 
 
 //Middlewares

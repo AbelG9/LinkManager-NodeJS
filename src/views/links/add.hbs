@@ -1,0 +1,27 @@
+<div class="container-flex p-2">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card" style="border: 2px solid #939797; border-radius: 10px; padding: 10px; background-color: #282c34; text-align: center">
+                <h2 class="card-header" class="display-4" style="color: aquamarine;">Inserte sus enlaces</h2>
+                <div class="card-body">
+                    <form action="/links/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="title" placeholder="Título" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" name="url" class="form-control" placeholder="URL">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" id="" cols="30" rows="2" class="form-control" placeholder="Descripción"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
