@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each links}}
+            <div class="col-md-3">
+                <div class="card text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34;">
+                    <div class="card-body" style="color: cadetblue;"">
+                        <a href="{{url}}">
+                            <h3 class="card-title text-uppercase" style="color: aqua;">
+                                {{title}}
+                            </h3>
+                        </a>
+                        <p>{{description}}</p>
+                        <p>{{timeago created_at}}</p>
+                        <div class="row">
+                            <div class="col">
+                                <a href="/links/edit/{{id}}" class="btn btn-secondary btn-block">Editar</a>
+                            </div>
+                            <div class="col">
+                                <a href="/links/delete/{{id}}" class="btn btn-info btn-block">Borrar</a>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34;">
+                    <h3 style="color: cadetblue;">No tienes enlaces guardados</h3>
+                    <a href="/links/add" class="btn btn-success">Guardar nuevo enlace</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
