@@ -3,25 +3,25 @@
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="card text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34; color: aqua;">
                 <div class="card-header text-uppercase">
-                    <h3>Inserte sus enlaces</h3>
+                    <h3>Registro</h3>
                 </div>
                 <div class="card-body">
-                    <form action="/links/add" method="POST">
+                    <form action="/signup" method="POST">
                         <div class="form-group">
-                            <label htmlFor="txttitle">Título de la Página:</label>
-                            <input type="text" class="form-control" id="txttitle" name="title" placeholder="Título" autofocus>
+                            <label htmlFor="txtnombre">Ingrese su Nombre Completo:</label>
+                            <input type="text" name="fullname" id="txtnombre" placeholder="Nombre" class="form-control" autofocus>
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txturl">Dirección de la Página:</label>
-                            <input type="url" id="txturl" name="url" class="form-control" placeholder="Dirección">
+                            <label htmlFor="txtuser">Ingrese un usuario:</label>
+                            <input type="text" name="username" id="txtuser" placeholder="Usuario" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txtdescripcion">Descripción de la Página:</label>
-                            <textarea name="description" id="txtdescripcion" rows="4" class="form-control" placeholder="Descripción"></textarea>
+                            <label htmlFor="txtpass">Ingrese una contraseña:</label>
+                            <input type="password" name="password" id="txtpass" placeholder="Contraseña" class="form-control">
                         </div>
                         <div class="form-group">
                             <button class="btn btn-info btn-block">
-                                Guardar
+                                Registrarse
                             </button>
                         </div>
                     </form>

@@ -1,0 +1,29 @@
+<div class="container-flex p-4">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34; color: aqua;">
+                <div class="card-header text-uppercase">
+                    <h3>Ingreso al Sistema</h3>
+                </div>
+                <div class="card-body">
+                    <!--<img src="/public/img/logoLM.png" alt="Logo LinkManager" class="card-img-top mx-auto m-2 rounded-circle w-50">-->
+                    <form action="/signin" method="POST">
+                        <div class="form-group">
+                            <label htmlFor="txtuser">Ingrese su usuario:</label>
+                            <input type="text" name="username" id="txtuser" placeholder="Usuario" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label htmlFor="txtpass">Ingrese su contraseña:</label>
+                            <input type="password" name="password" id="txtpass" placeholder="Contraseña" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-info btn-block">
+                                Ingresar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
