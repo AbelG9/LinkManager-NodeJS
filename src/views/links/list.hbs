@@ -2,10 +2,10 @@
     <div class="row">
         {{#each links}}
             <div class="col-md-3">
-                <div class="card text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34;">
-                    <div class="card-body" style="color: cadetblue;"">
+                <div class="card text-center card-aquastyle">
+                    <div class="card-body">
                         <a href="{{url}}">
-                            <h3 class="card-title text-uppercase" style="color: aqua;">
+                            <h3 class="card-title text-uppercase aquatext">
                                 {{title}}
                             </h3>
                         </a>
@@ -24,8 +24,8 @@
             </div>
         {{else}}
             <div class="col-md-4 mx-auto">
-                <div class="card card-body text-center" style="border: 2px solid aquamarine; border-radius: 10px; padding: 10px; background-color: #282c34;">
-                    <h3 style="color: cadetblue;">No tienes enlaces guardados</h3>
+                <div class="card card-body text-center card-aquastyle">
+                    <h3 class="aquatext">No tienes enlaces guardados</h3>
                     <a href="/links/add" class="btn btn-success">Guardar nuevo enlace</a>
                 </div>
             </div>
