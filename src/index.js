@@ -1,3 +1,4 @@
+//importación de módulos instalados
 const express = require('express');
 const morgan = require('morgan');
 const exp_handlebars = require('express-handlebars');
@@ -7,27 +8,30 @@ const session = require('express-session');
 const MySqlStore = require('express-mysql-session');
 const passport = require('passport');
 
+//importación de la base de datos
 const { database } = require('./keys');
 
 //inicializaciones
 const app = express();
 require('./lib/passport');
 
-//configuraciones
+//configuracion de puerto de operación
 app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
+//creación de handlebars (plantillas)
 app.engine('.hbs',exp_handlebars({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
     extname: '.hbs',
-    helpers: require('./lib/handlebars'),
+    helpers: require('./lib/timehandlebars'),
 }) );
 app.set('view engine', 'hbs');
 
 
 //Middlewares
 app.use(flash());
+//Inicialización de la sesión
 app.use(session({
     secret: 'AGmysqlnodesession',
     resave: false,

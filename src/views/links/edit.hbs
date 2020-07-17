@@ -1,21 +1,53 @@
+{{!-- Formulario de edición de enlaces --}}
 <div class="container-flex p-4">
     <div class="row justify-content-md-center">
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="card text-center card-aquastyle">
-                <h3 class="card-title text-uppercase">Inserte sus enlaces</h3>
+                <h3 class="card-title text-uppercase">
+                    Inserte sus enlaces
+                </h3>
                 <div class="card-body">
-                    <form action="/links/edit/{{datalink.id}}" method="POST">
+                    <form 
+                        action="/links/edit/{{datalink.id}}" 
+                        method="POST">
                         <div class="form-group">
-                            <label htmlFor="txttitle">Título de la Página:</label>
-                            <input type="text" class="form-control" id="txttitle" name="title" value="{{datalink.title}}" placeholder="Título" autofocus>
+                            <label htmlFor="txttitle">
+                                Título de la Página:
+                            </label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="txttitle" 
+                                name="title" 
+                                value="{{datalink.title}}" 
+                                placeholder="Título" 
+                                autofocus
+                            >
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txturl">Dirección de la Página:</label>
-                            <input type="url" id="txturl" name="url" class="form-control" value="{{datalink.url}}" placeholder="Dirección">
+                            <label htmlFor="txturl">
+                                Dirección de la Página:
+                            </label>
+                            <input 
+                                type="url" 
+                                id="txturl" 
+                                name="url" 
+                                class="form-control" 
+                                value="{{datalink.url}}" 
+                                placeholder="Dirección"
+                            >
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txtdescripcion">Descripción de la Página:</label>
-                            <textarea name="description" id="txtdescripcion" rows="4" class="form-control" placeholder="Descripción">{{datalink.description}}</textarea>
+                            <label htmlFor="txtdescripcion">
+                                Descripción de la Página:
+                            </label>
+                            <textarea 
+                                name="description" 
+                                id="txtdescripcion" 
+                                rows="4" 
+                                class="form-control" 
+                                placeholder="Descripción"
+                            >{{datalink.description}}</textarea>
                         </div>
                         <div class="form-group">
                             <button class="btn btn-info btn-block">

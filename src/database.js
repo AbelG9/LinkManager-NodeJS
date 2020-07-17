@@ -1,10 +1,11 @@
+//importación de módulos
 const mysql = require('mysql');
 const {promisify} = require('util');
-
 const { database } = require('./keys');
+//creación de conexión a la base de datos
 const pool = mysql.createPool(database);
 
-pool.getConnection((err, connection) => {
+pool.getConnection((err, connection) => { //manejo de errores
     if (err) {
         if (err.code === 'PROTOCOL_CONNECTION_LOST') {
             console.error('La conexión con la base de datos fue cerrada');

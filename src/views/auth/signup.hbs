@@ -1,3 +1,4 @@
+{{!-- Formulario de registro en el sistema --}}
 <div class="container-flex p-4">
     <div class="row justify-content-md-center">
         <div class="col-lg-4 col-md-6 col-sm-6">
@@ -8,16 +9,41 @@
                 <div class="card-body">
                     <form action="/signup" method="POST">
                         <div class="form-group">
-                            <label htmlFor="txtnombre">Ingrese su Nombre Completo:</label>
-                            <input type="text" name="fullname" id="txtnombre" placeholder="Nombre" class="form-control" autofocus>
+                            <label htmlFor="txtnombre">
+                                Ingrese su Nombre Completo:
+                            </label>
+                            <input 
+                                type="text" 
+                                name="fullname" 
+                                id="txtnombre" 
+                                placeholder="Nombre" 
+                                class="form-control" 
+                                autofocus
+                            >
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txtuser">Ingrese un usuario:</label>
-                            <input type="text" name="username" id="txtuser" placeholder="Usuario" class="form-control">
+                            <label htmlFor="txtuser">
+                                Ingrese un usuario:
+                            </label>
+                            <input 
+                                type="text" 
+                                name="username" 
+                                id="txtuser" 
+                                placeholder="Usuario" 
+                                class="form-control"
+                            >
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txtpass">Ingrese una contraseña:</label>
-                            <input type="password" name="password" id="txtpass" placeholder="Contraseña" class="form-control">
+                            <label htmlFor="txtpass">
+                                Ingrese una contraseña:
+                                </label>
+                            <input 
+                                type="password" 
+                                name="password" 
+                                id="txtpass" 
+                                placeholder="Contraseña" 
+                                class="form-control"
+                            >
                         </div>
                         <div class="form-group">
                             <button class="btn btn-info btn-block">

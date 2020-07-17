@@ -1,3 +1,4 @@
+{{!-- Vista de listado de enlaces guardados  --}}
 <div class="container p-4">
     <div class="row">
         {{#each links}}
@@ -13,10 +14,16 @@
                         <p>{{timeago created_at}}</p>
                         <div class="row">
                             <div class="col">
-                                <a href="/links/edit/{{id}}" class="btn btn-secondary btn-block">Editar</a>
+                                <a href="/links/edit/{{id}}" 
+                                    class="btn btn-secondary btn-block">
+                                    Editar
+                                </a>
                             </div>
                             <div class="col">
-                                <a href="/links/delete/{{id}}" class="btn btn-info btn-block">Borrar</a>
+                                <a href="/links/delete/{{id}}" 
+                                    class="btn btn-info btn-block">
+                                    Borrar
+                                </a>
                             </div>
                         </div>                      
                     </div>
@@ -25,8 +32,12 @@
         {{else}}
             <div class="col-md-4 mx-auto">
                 <div class="card card-body text-center card-aquastyle">
-                    <h3 class="aquatext">No tienes enlaces guardados</h3>
-                    <a href="/links/add" class="btn btn-success">Guardar nuevo enlace</a>
+                    <h3 class="aquatext">
+                        No tienes enlaces guardados
+                    </h3>
+                    <a href="/links/add" class="btn btn-success">
+                        Guardar nuevo enlace
+                    </a>
                 </div>
             </div>
         {{/each}}

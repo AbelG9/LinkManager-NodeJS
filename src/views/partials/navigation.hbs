@@ -1,37 +1,80 @@
+{{!-- Código de la barra de navegación --}}
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container">
     <a class="navbar-brand mb-0 h1 aquatext" href="/">
-      <img src="../../public/img/logoLM.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
       LINKMANAGER
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         {{#if user}}
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle aquatext" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a 
+              class="nav-link dropdown-toggle aquatext" 
+              href="#" 
+              id="navbarDropdown" 
+              role="button" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
               Enlaces
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background:#6d757e;">
-              <a class="dropdown-item" href="/links" style="color: rgb(60, 95, 95);">Ver enlaces</a>
+            <div 
+              class="dropdown-menu" 
+              aria-labelledby="navbarDropdown" 
+              style="background:#6d757e;">
+              <a 
+                class="dropdown-item" 
+                href="/links" 
+                style="color: rgb(60, 95, 95);">
+                Ver enlaces
+              </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/links/add" style="color: rgb(60, 95, 95);">Agregar un enlace</a>
+              <a 
+                class="dropdown-item" 
+                href="/links/add" 
+                style="color: rgb(60, 95, 95);">
+                Agregar un enlace
+              </a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link aquatext" href="/profile">Perfil</a>
+            <a 
+              class="nav-link aquatext" 
+              href="/profile">
+              Perfil
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link aquatext" href="/logout" >Cerrar sesión</a>
+            <a 
+              class="nav-link aquatext" 
+              href="/logout" >
+              Cerrar sesión
+            </a>
           </li>
         {{else}}
           <li class="nav-item">
-            <a href="/signin" class="nav-link aquatext">Ingresar</a>
+            <a 
+              href="/signin" 
+              class="nav-link aquatext">
+              Ingresar
+            </a>
           </li>
           <li class="nav-item">
-            <a href="/signup" class="nav-link aquatext">Registrarse</a>
+            <a 
+              href="/signup" 
+              class="nav-link aquatext">
+              Registrarse
+            </a>
           </li>
         {{/if}}
       </ul>

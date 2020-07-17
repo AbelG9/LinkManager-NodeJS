@@ -1,3 +1,4 @@
+{{!-- Código HTML de formulario de ingreso al sistema --}}
 <div class="container-flex p-4">
     <div class="row justify-content-md-center">
         <div class="col-lg-3 col-md-4 col-sm-6">
@@ -6,15 +7,30 @@
                     <h3>Ingreso al Sistema</h3>
                 </div>
                 <div class="card-body">
-                    <!--<img src="/public/img/logoLM.png" alt="Logo LinkManager" class="card-img-top mx-auto m-2 rounded-circle w-50">-->
                     <form action="/signin" method="POST">
                         <div class="form-group">
-                            <label htmlFor="txtuser">Ingrese su usuario:</label>
-                            <input type="text" name="username" id="txtuser" placeholder="Usuario" class="form-control">
+                            <label htmlFor="txtuser">
+                                Ingrese su usuario:
+                            </label>
+                            <input 
+                                type="text" 
+                                name="username" 
+                                id="txtuser" 
+                                placeholder="Usuario" 
+                                class="form-control"
+                            >
                         </div>
                         <div class="form-group">
-                            <label htmlFor="txtpass">Ingrese su contraseña:</label>
-                            <input type="password" name="password" id="txtpass" placeholder="Contraseña" class="form-control">
+                            <label htmlFor="txtpass">
+                                Ingrese su contraseña:
+                            </label>
+                            <input 
+                                type="password" 
+                                name="password" 
+                                id="txtpass" 
+                                placeholder="Contraseña" 
+                                class="form-control"
+                            >
                         </div>
                         <div class="form-group">
                             <button class="btn btn-info btn-block">
